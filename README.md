@@ -50,8 +50,8 @@ Offsets and durations on `Phrase` are 100-nanosecond ticks (`offsetMs()` and `du
 
 ```java
 SpeechClientConfig.builder()
-        .region("uaenorth").subscriptionKey(key)
-        .languageIdCandidates(List.of("sv-SE", "en-US", "ar-AE"))
+        .region("westeurope").subscriptionKey(key)
+        .languageIdCandidates(List.of("sv-SE", "en-US"))
         .build();   // phrases then carry primaryLanguage()
 ```
 

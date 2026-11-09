@@ -12,7 +12,7 @@ import org.junit.jupiter.api.Test;
 class ClientMessagesTest {
 
     private static SpeechClientConfig.Builder base() {
-        return SpeechClientConfig.builder().region("uaenorth").subscriptionKey("k").language("en-US");
+        return SpeechClientConfig.builder().region("westeurope").subscriptionKey("k").language("en-US");
     }
 
     @Test
@@ -42,8 +42,8 @@ class ClientMessagesTest {
 
     @Test
     void languageIdentificationDropsLanguageAndAddsLanguageId() {
-        SpeechClientConfig cfg = SpeechClientConfig.builder().region("uaenorth").subscriptionKey("k")
-                .languageIdCandidates(List.of("sv-SE", "en-US", "ar-AE")).build();
+        SpeechClientConfig cfg = SpeechClientConfig.builder().region("westeurope").subscriptionKey("k")
+                .languageIdCandidates(List.of("sv-SE", "en-US")).build();
         JsonNode c = ClientMessages.speechContext(cfg, "abc");
         assertTrue(c.at("/phraseDetection/language").isMissingNode());
         assertEquals(3, c.at("/languageId/languages").size());
@@ -64,7 +64,7 @@ class ClientMessagesTest {
 
     @Test
     void urlAndHostSuffixRules() {
-        assertEquals("wss://uaenorth.stt.speech.microsoft.com/speech/recognition/conversation/cognitiveservices/v1?language=en-US",
+        assertEquals("wss://westeurope.stt.speech.microsoft.com/speech/recognition/conversation/cognitiveservices/v1?language=en-US",
                 base().build().uri().toString());
         assertEquals("wss://swedencentral.stt.speech.microsoft.com/speech/universal/v2?language=sv-SE",
                 base().region("swedencentral").language("sv-SE").endpoint(SpeechClientConfig.Endpoint.UNIVERSAL_V2).build().uri().toString());

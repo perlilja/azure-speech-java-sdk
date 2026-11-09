@@ -46,7 +46,7 @@ class ClientMessagesTest {
                 .languageIdCandidates(List.of("sv-SE", "en-US")).build();
         JsonNode c = ClientMessages.speechContext(cfg, "abc");
         assertTrue(c.at("/phraseDetection/language").isMissingNode());
-        assertEquals(3, c.at("/languageId/languages").size());
+        assertEquals(2, c.at("/languageId/languages").size());
         assertEquals("DetectAtAudioStart", c.at("/languageId/mode").asText());
         assertEquals("Recognize", c.at("/languageId/onSuccess/action").asText());
         assertEquals("Always", c.at("/phraseOutput/phraseResults/resultType").asText());

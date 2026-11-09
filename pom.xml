@@ -109,7 +109,7 @@
         <!-- Runs *IT classes (the live test self-skips without credentials). -->
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-failsafe-plugin</artifactId>
-        <version>3.2.5</version>
+        <version>3.6.1</version>
         <executions>
           <execution>
             <goals>

@@ -1,0 +1,14 @@
+{
+  "_comment": "Synthetic recording in the same shape as the spec's protocol recordings. Replace or add real recordings next to this file; ProtocolHandlerTest replays any file with this structure.",
+  "requestId": "5f1f6c2c7e0d4e8c9a3b2d1c0f9e8d7c",
+  "received": [
+    {"headers": {"path": "turn.start", "x-requestid": "5f1f6c2c7e0d4e8c9a3b2d1c0f9e8d7c"}, "body": "{\"context\":{\"serviceTag\":\"d2bf86a2c9a547519f9d912116d4b024\"}}"},
+    {"headers": {"path": "speech.startDetected", "x-requestid": "5f1f6c2c7e0d4e8c9a3b2d1c0f9e8d7c"}, "body": "{\"Offset\":700000}"},
+    {"headers": {"path": "speech.hypothesis", "x-requestid": "5f1f6c2c7e0d4e8c9a3b2d1c0f9e8d7c"}, "body": "{\"Id\":\"df14daedf9ee40c68d5157fff6c4242f\",\"Text\":\"welcome\",\"Offset\":700000,\"Duration\":3300000,\"PrimaryLanguage\":{\"Language\":\"en-US\"},\"Channel\":0,\"Type\":\"ConversationTranscription\",\"SpeakerId\":\"Unknown\"}"},
+    {"headers": {"path": "speech.phrase", "x-requestid": "5f1f6c2c7e0d4e8c9a3b2d1c0f9e8d7c"}, "body": "{\"Id\":\"23751fd8c0cd45e38a305a0e7edca7f0\",\"RecognitionStatus\":\"Success\",\"DisplayText\":\"Welcome to Televox. How can I help?\",\"Offset\":700000,\"Duration\":27200000,\"Channel\":0,\"Type\":\"ConversationTranscription\",\"SpeakerId\":\"Guest-1\",\"SRModel\":\"base\"}"},
+    {"headers": {"path": "speech.phrase", "x-requestid": "5f1f6c2c7e0d4e8c9a3b2d1c0f9e8d7c"}, "body": "{\"Id\":\"a1\",\"RecognitionStatus\":\"Success\",\"DisplayText\":\"I would like to change my number.\",\"Offset\":29000000,\"Duration\":21000000,\"Channel\":0,\"Type\":\"ConversationTranscription\",\"SpeakerId\":\"Guest-2\",\"SRModel\":\"base\"}"},
+    {"headers": {"path": "speech.endDetected", "x-requestid": "5f1f6c2c7e0d4e8c9a3b2d1c0f9e8d7c"}, "body": ""},
+    {"headers": {"path": "speech.phrase", "x-requestid": "5f1f6c2c7e0d4e8c9a3b2d1c0f9e8d7c"}, "body": "{\"Id\":\"end\",\"RecognitionStatus\":\"EndOfDictation\",\"Offset\":566900000,\"Duration\":0,\"Channel\":0,\"Type\":\"ConversationTranscription\",\"SpeakerId\":\"Unknown\"}"},
+    {"headers": {"path": "turn.end", "x-requestid": "5f1f6c2c7e0d4e8c9a3b2d1c0f9e8d7c"}, "body": "{}"}
+  ]
+}
